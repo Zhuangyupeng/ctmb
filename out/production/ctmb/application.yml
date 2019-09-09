@@ -1,0 +1,26 @@
+spring:
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+        temp:
+          use_jdbc_metadata_defaults: false
+    show-sql: false
+    open-in-view: true
+  thymeleaf:
+    cache: true
+    prefix: classpath:/templates/
+    suffix: .html
+  mvc:
+    throw-exception-if-no-handler-found: true
+  output:
+    ansi:
+      enabled: detect
+  data:
+    redis:
+      repositories:
+        enabled: false
+
