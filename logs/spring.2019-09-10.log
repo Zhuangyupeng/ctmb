@@ -1,0 +1,86 @@
+11:29:29 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - Starting CtmbApplication on DESKTOP-O2OE0LP with PID 9672 (C:\Users\EDZ\Desktop\project\ctmb\target\classes started by EDZ in C:\Users\EDZ\Desktop\project\ctmb) 
+11:29:29 [32m[background-preinit][0;39m [31mWARN [0;39m [36morg.springframework.http.converter.json.Jackson2ObjectMapperBuilder[0;39m - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath 
+11:29:29 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - No active profile set, falling back to default profiles: default 
+11:29:29 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[0;39m - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+11:29:29 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor[0;39m - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data repositories in DEFAULT mode. 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces. 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7ebf3bf7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8080 (http) 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.coyote.http11.Http11NioProtocol[0;39m - Initializing ProtocolHandler ["http-nio-8080"] 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat] 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.24] 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization completed in 1090 ms 
+11:29:30 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.Version[0;39m - HHH000412: Hibernate Core {5.3.11.Final} 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.cfg.Environment[0;39m - HHH000206: hibernate.properties not found 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.annotations.common.Version[0;39m - HCANN000001: Hibernate Commons Annotations {5.0.4.Final} 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.dialect.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl[0;39m - HHH000422: Disabling contextual LOB creation as connection was null 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.type.BasicTypeRegistry[0;39m - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@ec531c9 
+11:29:31 [32m[restartedMain][0;39m [31mWARN [0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.example.ctmb.model.User 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardService[0;39m - Stopping service [Tomcat] 
+11:29:31 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener[0;39m - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled. 
+11:29:31 [32m[restartedMain][0;39m [1;31mERROR[0;39m [36morg.springframework.boot.SpringApplication[0;39m - Application run failed 
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is org.hibernate.AnnotationException: No identifier specified for entity: com.example.ctmb.model.User
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1778)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1105)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:867)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204)
+	at com.example.ctmb.CtmbApplication.main(CtmbApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.hibernate.AnnotationException: No identifier specified for entity: com.example.ctmb.model.User
+	at org.hibernate.cfg.InheritanceState.determineDefaultAccessType(InheritanceState.java:266)
+	at org.hibernate.cfg.InheritanceState.getElementsToProcess(InheritanceState.java:211)
+	at org.hibernate.cfg.AnnotationBinder.bindClass(AnnotationBinder.java:775)
+	at org.hibernate.boot.model.source.internal.annotations.AnnotationMetadataSourceProcessorImpl.processEntityHierarchies(AnnotationMetadataSourceProcessorImpl.java:250)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess$1.processEntityHierarchies(MetadataBuildingProcess.java:231)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:274)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:904)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:935)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:57)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:377)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
+	... 21 common frames omitted
+20:56:44 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - Starting CtmbApplication on DESKTOP-5QNUKE6 with PID 324 (started by Zhuangyupeng in D:\Java项目\Idea项目\ctmb) 
+20:56:44 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - No active profile set, falling back to default profiles: default 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data repositories in DEFAULT mode. 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces. 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75057c92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8080 (http) 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat] 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.24] 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization completed in 450 ms 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.dialect.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl[0;39m - HHH000422: Disabling contextual LOB creation as connection was null 
+20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.type.BasicTypeRegistry[0;39m - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@9a9040a 
+20:56:45 [32m[restartedMain][0;39m [31mWARN [0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.example.ctmb.model.Children, at table: users, for columns: [org.hibernate.mapping.Column(children)] 
