@@ -67,20 +67,3 @@ Caused by: org.hibernate.AnnotationException: No identifier specified for entity
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1837)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1774)
 	... 21 common frames omitted
-20:56:44 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - Starting CtmbApplication on DESKTOP-5QNUKE6 with PID 324 (started by Zhuangyupeng in D:\Java项目\Idea项目\ctmb) 
-20:56:44 [32m[restartedMain][0;39m [34mINFO [0;39m [36mcom.example.ctmb.CtmbApplication[0;39m - No active profile set, falling back to default profiles: default 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Bootstrapping Spring Data repositories in DEFAULT mode. 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.data.repository.config.RepositoryConfigurationDelegate[0;39m - Finished Spring Data repository scanning in 3ms. Found 0 repository interfaces. 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[0;39m - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75057c92] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying) 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.boot.web.embedded.tomcat.TomcatWebServer[0;39m - Tomcat initialized with port(s): 8080 (http) 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardService[0;39m - Starting service [Tomcat] 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.StandardEngine[0;39m - Starting Servlet engine: [Apache Tomcat/9.0.24] 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.apache.catalina.core.ContainerBase.[Tomcat-2].[localhost].[/][0;39m - Initializing Spring embedded WebApplicationContext 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.springframework.web.context.ContextLoader[0;39m - Root WebApplicationContext: initialization completed in 450 ms 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.jpa.internal.util.LogHelper[0;39m - HHH000204: Processing PersistenceUnitInfo [
-	name: default
-	...] 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.dialect.Dialect[0;39m - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.engine.jdbc.env.internal.LobCreatorBuilderImpl[0;39m - HHH000422: Disabling contextual LOB creation as connection was null 
-20:56:45 [32m[restartedMain][0;39m [34mINFO [0;39m [36morg.hibernate.type.BasicTypeRegistry[0;39m - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@9a9040a 
-20:56:45 [32m[restartedMain][0;39m [31mWARN [0;39m [36morg.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext[0;39m - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Invocation of init method failed; nested exception is javax.persistence.PersistenceException: [PersistenceUnit: default] Unable to build Hibernate SessionFactory; nested exception is org.hibernate.MappingException: Could not determine type for: com.example.ctmb.model.Children, at table: users, for columns: [org.hibernate.mapping.Column(children)] 
