@@ -8,5 +8,5 @@ class Children {
     var gender:String? = null
     var name: String? = null
 
-    var family:MutableSet<User>? = null
+    var family:MutableSet<User> = mutableSetOf()
 }

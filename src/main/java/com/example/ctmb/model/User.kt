@@ -12,7 +12,7 @@ import javax.persistence.Table
 class User {
     companion object {
         const val TYPE_MASTER = "主账号"
-        const val TYPE_SLAVE = "从账号"
+        const val TYPE_SLAVE = "次账号"
         const val GENDER_MALE = "男"
         const val GENDER_FEMALE = "女"
         const val STATUS_ENABLE = "已启用"
@@ -44,6 +44,6 @@ class User {
 
     var children: Children? = null
     var device: Device? = null
-    var encouragement:MutableSet<Encouragement> ? = null
-    var activity:MutableSet<Activity>? = null
+    var encouragement:MutableSet<Encouragement>  = mutableSetOf()
+    var activity:MutableSet<Activity> = mutableSetOf()
 }

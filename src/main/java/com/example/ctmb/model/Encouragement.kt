@@ -13,7 +13,7 @@ class Encouragement {
     var createType: String? = null
     var useCount: Long = 0
 
-    var activity:MutableSet<Activity>? = null
+    var activity:MutableSet<Activity> = mutableSetOf()
     var user:User? = null
     var admin:Admin? = null
 }

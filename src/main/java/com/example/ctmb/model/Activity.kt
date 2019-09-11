@@ -26,8 +26,8 @@ class Activity {
     var codeNum: Int = 0
     var title: String? = null
     var voice: String? = null
-    var allTheDay: Byte? = null
-    var remindMe: Byte? = null
+    var isAllTheDay: Boolean? = null
+    var remindMe: Boolean? = null
     var startAt: LocalDateTime? = null
     var endAt: LocalDateTime? = null
     var remindAt: String? = "5分钟"
