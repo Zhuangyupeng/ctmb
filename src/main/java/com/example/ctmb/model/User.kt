@@ -11,8 +11,7 @@ import javax.persistence.Table
 @Table(name = "users")
 class User {
     companion object {
-        const val TYPE_MASTER = "主账号"
-        const val TYPE_SLAVE = "次账号"
+
         const val GENDER_MALE = "男"
         const val GENDER_FEMALE = "女"
         const val STATUS_ENABLE = "已启用"
@@ -32,7 +31,6 @@ class User {
     var nickname: String? = null
     var createAt: LocalDateTime? = null
     var accessAt: LocalDateTime? = null
-    var type: String? = null
     var status: String? = null
     var avatar: String? = null
     var gender: String? = null
@@ -43,7 +41,7 @@ class User {
     var comment: String? = null
 
     var children: Children? = null
-    var device: Device? = null
+    var device:MutableSet<Device> = mutableSetOf()
     var encouragement:MutableSet<Encouragement>  = mutableSetOf()
     var activity:MutableSet<Activity> = mutableSetOf()
 }
