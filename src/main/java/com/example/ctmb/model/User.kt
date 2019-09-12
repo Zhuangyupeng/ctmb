@@ -11,9 +11,17 @@ import javax.persistence.Table
 @Table(name = "users")
 class User {
     companion object {
+        const val TYPE_MASTER = "主账号"
+        const val TYPE_SLAVE = "次账号"
+
+        const val ROLE_FATHER = "爸爸"
+        const val ROLE_MOTHER = "妈妈"
+        const val ROLE_GRANDFATHER = "爷爷"
+        const val ROLE_GRANDMOTHER = "奶奶"
 
         const val GENDER_MALE = "男"
         const val GENDER_FEMALE = "女"
+
         const val STATUS_ENABLE = "已启用"
         const val STATUS_DISABLE = "已禁用"
     }
@@ -22,7 +30,7 @@ class User {
     @Id
     @Column(name = "id")
     var id: Long = 0
-
+    var familyId:String? = null
     var phone: String? = null
     var password: String? =null
     var qqId: String? = null
@@ -39,6 +47,8 @@ class User {
     var district: String? = null
     var career: String? = null
     var comment: String? = null
+    var type: String? = null
+    var familyRole: String? = null
 
     var children: Children? = null
     var device:MutableSet<Device> = mutableSetOf()
