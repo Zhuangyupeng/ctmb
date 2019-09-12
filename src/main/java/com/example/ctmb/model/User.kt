@@ -30,7 +30,7 @@ class User {
     @Id
     @Column(name = "id")
     var id: Long = 0
-    var familyId:String? = null
+    var familyCode:String? = null
     var phone: String? = null
     var password: String? =null
     var qqId: String? = null
@@ -54,4 +54,6 @@ class User {
     var device:MutableSet<Device> = mutableSetOf()
     var encouragement:MutableSet<Encouragement>  = mutableSetOf()
     var activity:MutableSet<Activity> = mutableSetOf()
+    var sendInvitation: MutableSet<Invitation> = mutableSetOf()
+    var receivedInvitation: MutableSet<Invitation> = mutableSetOf()
 }
