@@ -30,30 +30,68 @@ class User {
     @Id
     @Column(name = "id")
     var id: Long = 0
-    var familyCode:String? = null
+
+    @Column(name = "familyCode")
+    var familyCode: String? = null
+
+    @Column(name = "phone")
     var phone: String? = null
-    var password: String? =null
+
+    @Column(name = "password")
+    var password: String? = null
+
+    @Column(name = "qqId")
     var qqId: String? = null
+
+    @Column(name = "wechatId")
     var wechatId: String? = null
+
+    @Column(name = "email")
     var email: String? = null
+
+    @Column(name = "nickname")
     var nickname: String? = null
+
+    @Column(name = "createAt")
     var createAt: LocalDateTime? = null
+
+    @Column(name = "accessAt")
     var accessAt: LocalDateTime? = null
+
+    @Column(name = "status")
     var status: String? = null
+
+    @Column(name = "avatar")
     var avatar: String? = null
+
+    @Column(name = "gender")
     var gender: String? = null
+
+    @Column(name = "province")
     var province: String? = null
+
+    @Column(name = "city")
     var city: String? = null
+
+    @Column(name = "district")
     var district: String? = null
+
+    @Column(name = "career")
     var career: String? = null
+
+    @Column(name = "comment")
     var comment: String? = null
+
+    @Column(name = "type")
     var type: String? = null
+
+    @Column(name = "familyRole")
     var familyRole: String? = null
 
     var children: Children? = null
-    var device:MutableSet<Device> = mutableSetOf()
-    var encouragement:MutableSet<Encouragement>  = mutableSetOf()
-    var activity:MutableSet<Activity> = mutableSetOf()
+    var device: MutableSet<Device> = mutableSetOf()
+    var encouragement: MutableSet<Encouragement> = mutableSetOf()
+    var activity: MutableSet<Activity> = mutableSetOf()
     var sendInvitation: MutableSet<Invitation> = mutableSetOf()
     var receivedInvitation: MutableSet<Invitation> = mutableSetOf()
 }

@@ -1,10 +1,6 @@
 package com.example.ctmb.model
 
-import dev.longan.annotation.Document
 import java.time.LocalDateTime
-import javax.persistence.ForeignKey
-import javax.persistence.JoinColumn
-import javax.persistence.ManyToOne
 
 class Activity {
 
@@ -38,9 +34,9 @@ class Activity {
     var comment: String? = null
     var status:String = STATUS_NOTSTARTED
 
-    @Document(comment = "激励语")
-    @ManyToOne
-    @JoinColumn(foreignKey = ForeignKey(name = "encouragement_id_fk"), nullable = false)
+//    @Document(comment = "激励语")
+//    @ManyToOne
+//    @JoinColumn(foreignKey = ForeignKey(name = "encouragement_id_fk"), nullable = false)
     var encouragement: Encouragement? = null
 
     var user: User? = null
