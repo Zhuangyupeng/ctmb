@@ -2,10 +2,7 @@ package com.example.ctmb.model
 
 import dev.longan.annotation.Document
 import java.time.LocalDateTime
-import javax.persistence.Column
-import javax.persistence.Entity
-import javax.persistence.Id
-import javax.persistence.Table
+import javax.persistence.*
 
 @Entity
 @Table(name = "users")
@@ -88,10 +85,12 @@ class User {
     @Column(name = "familyRole")
     var familyRole: String? = null
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(foreignKey = ForeignKey(name = "children_id_fk"))
     var children: Children? = null
-    var device: MutableSet<Device> = mutableSetOf()
-    var encouragement: MutableSet<Encouragement> = mutableSetOf()
-    var activity: MutableSet<Activity> = mutableSetOf()
-    var sendInvitation: MutableSet<Invitation> = mutableSetOf()
-    var receivedInvitation: MutableSet<Invitation> = mutableSetOf()
+//    var device: MutableSet<Device> = mutableSetOf()
+//    var encouragement: MutableSet<Encouragement> = mutableSetOf()
+//    var activity: MutableSet<Activity> = mutableSetOf()
+//    var sendInvitation: MutableSet<Invitation> = mutableSetOf()
+//    var receivedInvitation: MutableSet<Invitation> = mutableSetOf()
 }
