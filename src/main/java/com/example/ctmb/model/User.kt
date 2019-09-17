@@ -88,7 +88,9 @@ class User {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(foreignKey = ForeignKey(name = "children_id_fk"))
     var children: Children? = null
-//    var device: MutableSet<Device> = mutableSetOf()
+
+    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "users")
+    var devices: MutableSet<Device> = mutableSetOf()
 //    var encouragement: MutableSet<Encouragement> = mutableSetOf()
 //    var activity: MutableSet<Activity> = mutableSetOf()
 //    var sendInvitation: MutableSet<Invitation> = mutableSetOf()
