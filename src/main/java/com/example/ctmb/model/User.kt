@@ -91,8 +91,12 @@ class User {
 
     @ManyToMany(fetch = FetchType.LAZY, mappedBy = "users")
     var devices: MutableSet<Device> = mutableSetOf()
-//    var encouragement: MutableSet<Encouragement> = mutableSetOf()
-//    var activity: MutableSet<Activity> = mutableSetOf()
+
+    @OneToMany(mappedBy = "sources")
+    var encouragements: MutableSet<Encouragement> = mutableSetOf()
+
+    @OneToMany(mappedBy = "creator")
+    var activity: MutableSet<Activity> = mutableSetOf()
 //    var sendInvitation: MutableSet<Invitation> = mutableSetOf()
 //    var receivedInvitation: MutableSet<Invitation> = mutableSetOf()
 }
